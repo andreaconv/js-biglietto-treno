@@ -17,10 +17,12 @@ if (anni < 18) {
 
 console.log(prezzocompleto);
 
+let prezzofinale = Math.round(prezzocompleto * 100) / 100
+
 
 // LET da collegare a HTML
 let outputStr = `
-  Il prezzo del tuo biglietto è ${prezzocompleto}
+  Il prezzo del tuo biglietto è ${prezzofinale}
 `
 
 
