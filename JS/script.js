@@ -23,7 +23,16 @@ let prezzofinale = Math.round(prezzocompleto * 100) / 100
 // LET da collegare a HTML
 let outputStr = `
   Il prezzo del tuo biglietto è di &euro; <span>${prezzofinale}</span> <br>
-  Mostra il tuo biglietto al controllore tramite questo QR code <img src="JS/frame (1).png" alt="">
+  Mostra il tuo biglietto al controllore tramite questo QR code 
+  <div class="card mt-3" style="width: 18rem;">
+  <img src="JS/frame (1).png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Biglietto n#</h5>
+    <p class="card-text">Partenza da </p>
+    <p class="card-text">Arrivo a </p>
+    <p class="card-text">Totale km ${km} </p>
+  </div>
+</div>
 `
 
 
